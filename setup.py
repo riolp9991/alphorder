@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="alphorder",  # Replace with your own username
-    version="0.0.3",
+    version="0.0.5",
     author="riolp9991",
     author_email="riolp9991@gmail.com",
     description="Sort a folder's content with just one line of code",
@@ -19,5 +19,10 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        "console_scripts": [
+            "alphorder = alphorder.__main__:main"
+        ]
+    },
     python_requires='>=3.6',
 )

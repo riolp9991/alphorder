@@ -1,1 +1,2 @@
-from sorter import Sorter
+from alphorder.sorter import sort
+import alphorder.sorter

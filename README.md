@@ -1,6 +1,6 @@
 # Alphorder
 
-Alphorder is a tool that allows you to put order in your folders with a simple line of code from the comandline or you can import it to your **Python proyect**
+Alphorder is a tool that allows you to sort your folders with a simple line of code either from the command line or you can import it into your Python project.
 
 # Instalation
 
@@ -21,7 +21,7 @@ You can import alphorder to your proyect with this line of code
 ```python
 from alphorder import Alphorder
 ```
-This way you have imported the class that contains the methods to order your folders
+This way you have imported the class that contains the methods to sort your folders
 
 ### Alphabetic order
 
@@ -36,7 +36,7 @@ Alphorder.sort("path/to/folder")
 ```
 
 ### Move to a specific folder
-You can move all the content of a folder to another one with the method `moveToFolder`.
+You can perform the same that before but just for the content that matches one of the keywords that you specifie with the method `moveToFolder`.
 
 The method will receive two params, the first one will be the path of the folder, and the second one will be the folder to move.
 
@@ -53,7 +53,7 @@ You can perform the same that before but just for the content that matches a ser
 
 This method will receive a param more that the previous one: an array of strings to match
 
-> The target will be moved if any of the keywords is founded on its name
+> The target will be moved if any of the keywords is found on its name
 
 ```python
 Alphorder.sort("/path/to/folder", "second path", ["sort", "alph"])

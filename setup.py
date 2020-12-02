@@ -5,11 +5,11 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="alphorder",  # Replace with your own username
-    version="0.0.8",
+    version="0.0.9",
     author="riolp9991",
     author_email="riolp9991@gmail.com",
     description="Sort a folder's content with just one line of code",
-    long_description="",
+    long_description=open('README.md').read(),
     license="MIT",
     long_description_content_type="text/markdown",
     url="https://github.com/riolp9991/alphorder",

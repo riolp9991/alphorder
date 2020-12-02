@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="alphorder",  # Replace with your own username
-    version="0.0.7",
+    version="0.0.8",
     author="riolp9991",
     author_email="riolp9991@gmail.com",
     description="Sort a folder's content with just one line of code",

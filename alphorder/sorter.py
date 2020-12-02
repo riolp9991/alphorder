@@ -61,7 +61,7 @@ class Alphorder:
             currentPath = join(path, node)
             if(isdir(currentPath) and not compare(node, 'Recovery') and not compare(node, 'System Volume Information') and not compare(node, '$RECYCLE.BIN')):
                 for word in keywords:
-                    if word in node:
+                    if word.lower() in node.lower():
                         if not currentPath == folderToMove:
                             shutil.move(currentPath, folderToMove)
                             break
